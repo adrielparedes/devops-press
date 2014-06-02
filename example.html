@@ -38,9 +38,6 @@
 		 .reveal section img {
 		 	border: none;
 		 }
-		 .reveal .slides {
-		 	top: 40%; /* Override the default value of 50% for better position of text and to compensate for the footer */
-		 }
 		 
 		 div.footer {
 		 	width: 100%;
@@ -65,30 +62,30 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section data-background="/lib/img/rh-bg-start.jpg" data-background-size="cover" data-background-position="center bottom">
-					<font style="color: white">
-					<h4 style="color: white">JBoss EAP 6.3 Beta - New Features</h1>
-					<p>Domain controller Failover </p>
-					<p align="left" style="position: relative; top: 400px" >
+					<div style="width: 1056px; height: 500px; position: center top; color: white">
+						<h2 style="color: white">JBoss EAP 6.3 Beta - New Features</h2>
+						<h4 style="color: white">Domain Controller failover</h4>
+					</div>
+					<div style="width: 600px; height: 300px; position: left bottom; text-align: left; color: white">
 						Thomas Qvarnström<br/>
 						JBoss Technology Evangelist<br/>
 						Twitter: @tqvarnst<br/>
 						Blog: <a href="http://blog.thomasqvarnstrom.com" style="color: blue">blog.thomasqvarnstrom.com</a>
-					</p>	
-					</font>	
+					</div>
 				</section>
 				<section data-markdown>
 					<script type="text/template">
-						### Agenda
+						## Agenda
 						* Intro to JBoss EAP
 						* Different deployment modes for JBoss EAP
-						* What is a domain controller
+						* What is a domain controller?
 						* Domain Controller failover
 						* Summary
 					</script>
 				</section>
 				
 				<section data-background="/lib/img/rh-bg-8.jpg">
-					<h1 style="color: white; font-weight: bold">What is a domain controller</h1>
+					<h1 style="color: white; font-weight: bold">What is a domain controller?</h1>
 				</section>
 				<section data-markdown>
 					<script type="text/template">
@@ -124,10 +121,12 @@
 
 		</div>
 		
+		<!--
 		<div class="footer">
 			Thomas Qvarnstr&ouml;m, Red Hat
 		</div>
-
+		-->
+		
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.min.js"></script>
 

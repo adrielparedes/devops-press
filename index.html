@@ -38,9 +38,6 @@
 		 .reveal section img {
 		 	border: none;
 		 }
-		 .reveal .slides {
-		 	top: 40%; /* Override the default value of 50% for better position of text and to compensate for the footer */
-		 }
 		 
 		 div.footer {
 		 	width: 100%;
@@ -65,16 +62,17 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section data-background="/lib/img/rh-bg-start.jpg" data-background-size="cover" data-background-position="center bottom">
-					<font style="color: white">
-					<h4 style="color: white">Start slide main title</h1>
-					<p>Sub title (if needed)</p>
-					<p align="left" style="position: relative; top: 400px" >
-						Name<br/>
-						Role<br/>
-						Twitter: <br/>
-						Blog: <a href="#replace" style="color: blue">link</a>
-					</p>	
-					</font>	
+					<div style="width: 1056px; height: 500px; position: center top; color: white">
+							<h2 style="color: white">Start slide main title</h2>
+							<h4 style="color: white">Sub title (if needed)</h4>
+					</div>
+					<div style="width: 600px; height: 300px; position: left bottom; text-align: left; color: white">
+					
+							Name<br/>
+							Role<br/>
+							Twitter: <br/>
+							Blog: <a href="#replace" style="color: blue">link</a>
+					</div>
 				</section>
 				<section data-markdown>
 					<script type="text/template">
@@ -104,20 +102,23 @@
 				</section>
 				
 				<section data-background="/lib/img/rh-bg-1.jpg">
-					<h1 style="color: white; font-weight: bold">Section overarch slide 1</h1>
+					<h1 style="color: white">Section overarch slide 1</h1>
 				</section>
 				
 				<section data-background="/lib/img/rh-bg-2.jpg">
-					<h1 style="color: white; font-weight: bold">Section overarch slide 2</h1>
+					<h1 style="color: white">Section overarch slide 2</h1>
 				</section>
 
 			</div>
 
 		</div>
 		
+		<!-- If a footer text is needed use the uncomment the div class=footer -->
+		<!--
 		<div class="footer">
 			Name, Red Hat
 		</div>
+		-->
 
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.min.js"></script>
@@ -129,11 +130,11 @@
 			Reveal.initialize({
 				controls: true,
 				progress: false,
-				history: true,
+				history: false,
 				center: false,
 				transition: 'default',
 				backgroundTransition: 'slide',
-				//parallaxBackgroundImage: '/lib/img/redhat-main-bg.png',
+				//parallaxBackgroundImage: '/lib/img/rh-bg-1.jpg',
 				//parallaxBackgroundSize: '1653px 1240px',
 
 				// Optional libraries used to extend on reveal.js

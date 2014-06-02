@@ -8,6 +8,32 @@
 // Default mixins and settings -----------------
 @import "../template/mixins";
 @import "../template/settings";
+
+
+@font-face {
+    font-family: 'overpassregular';
+    src: url('/lib/fonts/Overpass_Regular-webfont.eot');
+    src: url('/lib/fonts/Overpass_Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/lib/fonts/Overpass_Regular-webfont.woff') format('woff'),
+         url('/lib/fonts/Overpass_Regular-webfont.ttf') format('truetype'),
+         url('/lib/fonts/Overpass_Regular-webfont.svg#overpassregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'overpassbold';
+    src: url('/lib/fonts/Overpass_Bold-webfont.eot');
+    src: url('/lib/fonts/Overpass_Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/lib/fonts/Overpass_Bold-webfont.woff') format('woff'),
+         url('/lib/fonts/Overpass_Bold-webfont.ttf') format('truetype'),
+         url('/lib/fonts/Overpass_Bold-webfont.svg#overpassbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 // ---------------------------------------------
 
 
@@ -18,9 +44,11 @@
 
 
 // Override theme settings (see ../template/settings.scss)
-$mainFont: 'Open Sans';
+//$mainFont: 'Open Sans';
+$mainFont: 'overpassregular';
 $mainColor: #000000;
-$headingFont: 'Open Sans';
+//$headingFont: 'Open Sans';
+$headingFont: 'overpassbold';
 $headingColor: #000000;
 $headingLetterSpacing: 0.02em;
 $headingTextShadow: none;
@@ -55,3 +83,4 @@ $selectionBackgroundColor: black;
 // Theme template ------------------------------
 @import "../template/theme";
 // ---------------------------------------------
+
